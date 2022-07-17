@@ -1,0 +1,43 @@
+<h1 mat-dialog-title>Create appoinment</h1>
+
+<div mat-dialog-content>
+    <p>
+        <mat-form-field appearance="legacy">
+            <mat-label>First name</mat-label>
+            <input matInput placeholder="First name" autocomplete="off">
+        </mat-form-field>
+    </p>
+    <p>
+        <mat-form-field appearance="legacy">
+            <mat-label>Last name</mat-label>
+            <input matInput placeholder="Last name" autocomplete="off">
+        </mat-form-field>
+    </p>
+    <p>
+        <mat-form-field appearance="legacy">
+            <mat-label>Email</mat-label>
+            <input matInput placeholder="Email" autocomplete="off">
+        </mat-form-field>
+    </p>
+    <p>
+        <mat-form-field appearance="legacy">
+            <mat-label>Choose an option</mat-label>
+            <mat-select>
+                <mat-option value="option1">Male</mat-option>
+                <mat-option value="option2">Female</mat-option>
+            </mat-select>
+        </mat-form-field>
+    </p>
+
+    <p>
+        <mat-form-field appearance="legacy">
+            <mat-label>Age</mat-label>
+            <input matInput type="number" placeholder="Age" autocomplete="off">
+        </mat-form-field>
+    </p>
+</div>
+
+<div mat-dialog-actions>
+    <button mat-button mat-dialog-close>Cancel</button>
+    <button mat-button [mat-dialog-close]="undefined">Create</button>
+</div>

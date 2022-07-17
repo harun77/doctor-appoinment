@@ -1,0 +1,12 @@
+<table>
+    <tr *ngFor="let week of weeks">
+        <td *ngFor="let day of days">
+            <div class="appoinments hide-scrollbar">
+                <div class="appoinment" *ngFor="let appoinment of appoinments; let i = index"
+                    (click)="openAppoinment(appoinment)">
+                    Appoinment {{ i+1 }}
+                </div>
+            </div>
+        </td>
+    </tr>
+</table>

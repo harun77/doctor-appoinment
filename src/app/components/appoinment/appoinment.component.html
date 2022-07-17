@@ -1,0 +1,16 @@
+<div class="container">
+  <div class="header">
+    <p class="month">
+      <mat-form-field appearance="legacy" style="font-size: 24px">
+        <mat-select [(ngModel)]="selectedMonth" (ngModelChange)="goToCalendar()">
+          <mat-option *ngFor="let month of months" [value]="month">{{ month }}</mat-option>
+        </mat-select>
+      </mat-form-field>
+    </p>
+    <span class="grow"></span>
+    <button mat-raised-button color="primary" (click)="openCreateAppoinmentDialog()">Create appoinment</button>
+  </div>
+  <div class="calendar">
+    <calendar></calendar>
+  </div>
+</div>
