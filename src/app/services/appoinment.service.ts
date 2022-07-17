@@ -13,4 +13,9 @@ export class AppoinmentService {
     const url = 'assets/appoinments.json';
     return this.http.get(url);
   }
+
+  createAppoinment(data: any): Observable<any> {
+    const url = '';
+    return this.http.post(url, data);
+  }
 }
